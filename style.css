@@ -21,6 +21,7 @@
 /* header section styles*/
 header {
     padding: 35px 12.5% 0;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 /* nav section */
 .nav {
@@ -31,12 +32,11 @@ header {
 
 .nav-logo-container {
     display: flex;
-    gap: 10px;
+    gap: 1.25rem;
     align-items: center;
 }
 
 .nav-logo img {
-    width: 60px;
     padding-top: 7px;
 }
 
@@ -74,4 +74,46 @@ header {
 
 .fa-tiktok {
     color: #000;
+}
+
+
+/* responsive for mobile devices */
+@media screen and (max-width: 576px) {
+    /* header section */
+    header {
+        padding-top: 35px;
+    }
+    .nav,
+    .nav-items ul {
+        flex-direction: column;
+    }
+
+    .nav-logo-container {
+        margin-bottom: 35px;
+    }
+
+    .nav-title {
+        font-size: 2rem;;
+    }
+
+}
+
+
+/* responsive for tablet devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* header section */
+    header {
+        padding-top: 50px;
+    }
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-logo-container {
+        margin-bottom: 35px;
+    }
+
+    .nav-items ul {
+        gap: 3.5rem;
+    }
 }
