@@ -98,13 +98,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-    background-image: url('./images/Group\ 14.png');
-    background-repeat: no-repeat;
-    padding: 20px 12.5% 0;
+    flex: 1;
+    
+    /* padding: 20px 12.5% 0; */
 }
 
 .banner-content {
     margin-top: 24px;
+    background-image: url('./images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 12.5%;
+    width: 50%;
 }
 
 .banner-btn {
@@ -161,6 +166,7 @@ header {
 
 .banner-image {
     max-width: 50%;
+    padding-right: 12.5%;
 }
 
 .banner-image img {
@@ -185,6 +191,30 @@ header {
 
     .nav-title {
         font-size: 2rem;;
+    }
+
+    /* banner section */
+    .banner {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner-content {
+        max-width: fit-content;
+    }
+
+    .banner-image {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .banner-image img {
+        width: 100%;
     }
 
 }
