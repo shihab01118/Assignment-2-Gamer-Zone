@@ -103,13 +103,16 @@ header {
     /* padding: 20px 12.5% 0; */
 }
 
-.banner-content {
-    margin-top: 24px;
+.banner-content-container {
     background-image: url('./images/Group\ 14.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 12.5%;
     width: 50%;
+    padding-left: 12.5%;
+}
+
+.banner-content {
+    margin-top: 24px;
 }
 
 .banner-btn {
@@ -197,15 +200,19 @@ header {
     .banner {
         flex-direction: column-reverse;
         padding: 20px;
+        gap: 25px;
     }
 
-    .banner-content {
+    .banner-content-container {
         width: 100%;
         padding: 0;
+        margin-top: 30px;
     }
 
     .banner-content {
         max-width: fit-content;
+        margin: auto;
+        padding: 30px 0;
     }
 
     .banner-image {
@@ -237,4 +244,36 @@ header {
     .nav-items ul {
         gap: 3.5rem;
     }
+
+    /* banner section */
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .banner-content-container {
+        width: 80%;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .banner-content {
+        max-width: fit-content;
+        margin: auto;
+        padding: 75px 0;
+    }
+
+    .banner-image {
+        max-width: 75%;
+        padding-right: 0;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+    
 }
