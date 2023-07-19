@@ -262,7 +262,7 @@ header {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
 }
 
 .overlay i {
@@ -284,6 +284,7 @@ header {
 .online-card:hover .card-img {
     border: 2px solid #FF42A5;
     border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
 }
 
 .card-title {
@@ -355,9 +356,13 @@ header {
     padding: 100px 12.5%;
     margin-top: 120px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
+    gap: 1.5rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .select {
@@ -544,6 +549,7 @@ footer .fa-brands {
     
     /* button section */
     .buttons {
+        display: grid;
         padding: 50px 20px;
         margin-top: 50px;
         grid-template-columns: repeat(3, 1fr);
@@ -703,6 +709,7 @@ footer .fa-brands {
 
     /* button section */
     .buttons {
+        display: grid;
         padding: 70px 50px;
         margin-top: 60px;
         grid-template-columns: repeat(3, 1fr);
