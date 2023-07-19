@@ -301,7 +301,7 @@ header {
 
 /* online play game section */
 .online-play {
-    padding: 0 12.5% 100px;
+    padding: 0 12.5%;
     display: flex;
     align-items: center;
     gap: 15%;
@@ -323,10 +323,11 @@ header {
     right: -70%;
     top: 64%;
     left: 75%;
+    width: 45%;
 }
 
 .online-play-img-2 img {
-    width: 50%;
+   width: 100%;
 }
 
 .online-play-content {
@@ -424,6 +425,23 @@ header {
         margin-top: 10px;
     }
 
+    /* online play game section */
+    .online-play {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+        gap: 2rem;
+    }
+
+    .online-play-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .online-play-img {
+        max-width: 75%;
+    }
+    
+
 }
 
 
@@ -500,4 +518,21 @@ header {
     .card-title {
         margin-top: 10px;
     }
+
+    /* online play game section */
+    .online-play {
+        flex-direction: column-reverse;
+        padding: 50px;
+        gap: 2rem;
+    }
+
+    .online-play-content {
+        max-width: 65%;
+        text-align: center;
+    }
+
+    .online-play-img {
+        max-width: 75%;
+    }
+
 }
