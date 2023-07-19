@@ -265,6 +265,17 @@ header {
         width: 100%;
     }
 
+    /* gamer section */
+    .gamer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .gamer-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
 }
 
 
@@ -317,4 +328,14 @@ header {
         width: 100%;
     }
     
+    /* gamer section */
+    .gamer {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .gamer-content {
+        max-width: 100%;
+        text-align: center;
+    }
 }
