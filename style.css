@@ -272,8 +272,7 @@ header {
 }
   
   .overlay .text {
-    color: #fff;
-    font-size: 18px;
+    color: #FF42A5;
     margin-top: 10px;
 }
 
@@ -355,6 +354,20 @@ header {
         text-align: center;
     }
 
+    /* online section */
+    .online {
+        padding: 30px 20px;
+    }
+    
+    .online-card-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card-title {
+        margin-top: 10px;
+    }
+
 }
 
 
@@ -416,5 +429,19 @@ header {
     .gamer-content {
         max-width: 100%;
         text-align: center;
+    }
+
+    /* online section */
+    .online {
+        padding: 50px;
+    }
+    
+    .online-card-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .card-title {
+        margin-top: 10px;
     }
 }
