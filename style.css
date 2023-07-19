@@ -283,7 +283,7 @@ header {
 }
 
 .online-card:hover .card-img {
-    border: 3px solid #FF42A5;
+    border: 2px solid #FF42A5;
     border-radius: 16px;
 }
 
@@ -600,9 +600,10 @@ footer .fa-brands {
     .term-links {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1.5rem;
         width: 100%;
         text-align: center;
+        font-size: 14px;
     }
 
     .footer-text {
