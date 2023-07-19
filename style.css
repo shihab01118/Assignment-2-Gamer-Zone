@@ -46,17 +46,17 @@ header {
     justify-content: space-between;
 }
 
-.nav-logo-container {
+.logo-container {
     display: flex;
     gap: 1.25rem;
     align-items: center;
 }
 
-.nav-logo img {
+.logo img {
     padding-top: 7px;
 }
 
-.nav-title {
+.title {
     font-size: 2.8rem;
     font-weight: 700;
     color: #0B0223;
@@ -384,6 +384,73 @@ header {
     cursor: pointer;
 }
 
+/* footer section */
+footer {
+    padding: 100px 12.5%;
+    background-color: #0B0223;
+}
+
+
+.footer-container {
+    max-width: 60%;
+    margin: 0 auto;
+} 
+
+.footer-container .logo-container {
+    justify-content: center;
+}
+
+.footer-title {
+    color: #fff;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+footer .fa-brands {
+    color: #fff;
+    font-size: 40px;
+}
+
+.term-links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 60px auto 30px;
+}
+
+.term-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    display: block;
+    font-weight: 500;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+    text-align: center;
+}
+
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
     /* header section */
@@ -490,6 +557,52 @@ header {
 
     .select img {
         width: 30px;
+    }
+
+    /* footer section */
+    footer {
+        padding: 50px 20px;
+    }
+
+    .footer-container {
+        max-width: 100%;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        gap: 20px;
+    }
+
+    .links a {
+        font: 16px;
+        font-weight: 500;
+    } 
+
+    .social-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    footer .fa-brands {
+        font-size: 2rem;
+    }
+
+    .term-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-text {
+        font-size: 12px;
     }
 }
 
@@ -603,4 +716,7 @@ header {
     .select img {
         width: 40px;
     }
+
+    /* footer section */
+    
 }
